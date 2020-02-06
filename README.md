@@ -16,7 +16,7 @@
     <br />
     <a href="https://github.com/zolomazizi/Environnement-news">View Demo</a>
     ·
-    <a href="https://github.com/zolomazizi/AngularP2">Front end projecte</a>
+    <a href="https://github.com/zolomazizi/Front_end-AngularP2">Front end projecte</a>
     ·
     <a href="https://github.com/zolomazizi/DashboardAngular/tree/master/DashboardAngular/Angular-dashboard-master">front end dashboard</a>
   </p>
