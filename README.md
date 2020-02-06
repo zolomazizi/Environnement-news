@@ -121,7 +121,7 @@ Dans notre cas en vas réaliser un projet de la presse thématique (Environnemen
 ### Diagramme de séquence
 
 ### Diagramme de classe
-[![classe.PNG][classe.PNG]]
+![API page](https://github.com/zolomazizi/DashboardAngular/blob/master/DashboardAngular/Angular-dashboard-master/journaliste.PNG)
 
 
 
