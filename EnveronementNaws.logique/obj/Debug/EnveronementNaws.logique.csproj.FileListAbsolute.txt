@@ -1,0 +1,6 @@
+C:\Users\Youcode\source\repos\EnveronementNaws\EnveronementNaws.logique\bin\Debug\EnveronementNaws.logique.dll
+C:\Users\Youcode\source\repos\EnveronementNaws\EnveronementNaws.logique\bin\Debug\EnveronementNaws.logique.pdb
+C:\Users\Youcode\source\repos\EnveronementNaws\EnveronementNaws.logique\obj\Debug\EnveronementNaws.logique.csprojAssemblyReference.cache
+C:\Users\Youcode\source\repos\EnveronementNaws\EnveronementNaws.logique\obj\Debug\EnveronementNaws.logique.csproj.CoreCompileInputs.cache
+C:\Users\Youcode\source\repos\EnveronementNaws\EnveronementNaws.logique\obj\Debug\EnveronementNaws.logique.dll
+C:\Users\Youcode\source\repos\EnveronementNaws\EnveronementNaws.logique\obj\Debug\EnveronementNaws.logique.pdb

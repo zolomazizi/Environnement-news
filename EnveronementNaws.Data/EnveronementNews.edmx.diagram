@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5756a9dc47774e2194856a4dd77bbb46" Name="Diagram1" ZoomLevel="72">
+        <EntityTypeShape EntityType="NEWSModel.C__MigrationHistory" Width="1.5" PointX="0.5" PointY="0.5" />
+        <EntityTypeShape EntityType="NEWSModel.Api" Width="1.5" PointX="0.5" PointY="2.625" />
+        <EntityTypeShape EntityType="NEWSModel.Article" Width="1.5" PointX="11.25" PointY="2.125" />
+        <EntityTypeShape EntityType="NEWSModel.AspNetRoles" Width="1.5" PointX="5.125" PointY="3.75" />
+        <EntityTypeShape EntityType="NEWSModel.AspNetUserClaims" Width="1.5" PointX="5.125" PointY="0.625" />
+        <EntityTypeShape EntityType="NEWSModel.AspNetUserLogins" Width="1.5" PointX="7.25" PointY="6.75" />
+        <EntityTypeShape EntityType="NEWSModel.AspNetUsers" Width="1.5" PointX="7.125" PointY="0.625" />
+        <EntityTypeShape EntityType="NEWSModel.Categorie" Width="1.5" PointX="9.375" PointY="6.75" />
+        <EntityTypeShape EntityType="NEWSModel.Commentaire" Width="1.5" PointX="14" PointY="7.375" />
+        <EntityTypeShape EntityType="NEWSModel.Gestionner" Width="1.5" PointX="14" PointY="0.5" />
+        <EntityTypeShape EntityType="NEWSModel.Journalistes" Width="1.5" PointX="9.375" PointY="2.125" />
+        <EntityTypeShape EntityType="NEWSModel.Pub" Width="1.5" PointX="2.5" PointY="0.5" />
+        <EntityTypeShape EntityType="NEWSModel.RedacteurEnChef" Width="1.5" PointX="14" PointY="3.625" />
+        <EntityTypeShape EntityType="NEWSModel.Roles" Width="1.5" PointX="2.5" PointY="2.875" />
+        <AssociationConnector Association="NEWSModel.FK_Article_ChefRedaction" />
+        <AssociationConnector Association="NEWSModel.FKArticle595439" />
+        <AssociationConnector Association="NEWSModel.FKArticle668536" />
+        <AssociationConnector Association="NEWSModel.FKCommentair387374" />
+        <AssociationConnector Association="NEWSModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="NEWSModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="NEWSModel.FKGestionner622322" />
+        <AssociationConnector Association="NEWSModel.FKJournaliste622032" />
+        <AssociationConnector Association="NEWSModel.FKRedactionChef622022" />
+        <AssociationConnector Association="NEWSModel.AspNetUserRoles" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
