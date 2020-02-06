@@ -18,7 +18,7 @@
     ·
     <a href="https://github.com/zolomazizi/AngularP2">Front end projecte</a>
     ·
-    <a href="https://github.com/zolomazizi/DashboardAngular">front end dashboard</a>
+    <a href="https://github.com/zolomazizi/DashboardAngular/tree/master/DashboardAngular/Angular-dashboard-master">front end dashboard</a>
   </p>
 </p>
 
