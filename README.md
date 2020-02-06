@@ -84,4 +84,32 @@ Dans notre cas en vas réaliser un projet de la presse thématique (Environnemen
     c - L’automatisation du système de notification .
     
  3. consommation des flux externe (rss , rest api ).
+ 
+ 
+ ### CARACTÉRISTIQUES
+ 
+-Un espace de blog ou d’actualités.
+ 
+-	Un espace admin (Dashboard).
+
+-	Un espace journaliste.
+
+-	Un espace de rédacteur chef 
+
+-	Consommer des API ou flux d’actualités.
+
+-	Un Formulaire de contact.
+
+-	Partage des liens vers les réseaux sociaux.
+
+-	Fonctionnalité de CRUD (Ajouter, Modifier, Supprimer, Consultation).
+
+-	Espace Twitter #Relative avec l’environnement.
+
+-	Les notifications par mail.
+
+-	La météo.
+
+-	Les publicités.
+
 
