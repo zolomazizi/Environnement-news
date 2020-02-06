@@ -88,7 +88,7 @@ Dans notre cas en vas réaliser un projet de la presse thématique (Environnemen
  
  ### CARACTÉRISTIQUES
  
--Un espace de blog ou d’actualités.
+- Un espace de blog ou d’actualités.
  
 -	Un espace admin (Dashboard).
 
@@ -111,5 +111,44 @@ Dans notre cas en vas réaliser un projet de la presse thématique (Environnemen
 -	La météo.
 
 -	Les publicités.
+
+## Diagrame
+
+- Conception de bases de données relationnelles avec UML. 
+
+### Diagramme de Use Case 
+
+### Diagramme de séquence
+
+### Diagramme de classe
+
+
+
+## Les packages installés
+
+•	Microsoft.AspNet.WebApi.Cors
+
+•	Microsoft.AspNet.Identity.Core
+
+•	EntityFramework
+
+•	Miscrosoft.Owin.Cors
+
+
+## Conception de Code
+
+Projet ASP.NET utilisant identité et entité Framework
+
+Pour réalise nous projet en a divise la solution a 3 partie 
+
+•	Partie RESTAPI tourisme qui contient des contrôleurs et des models.
+
+•	Partie DATA sous forme d’une bibliothèque de classe qui contient un ADO lié avec notre base de données 
+
+•	Partie LOGIQUE qui contient des traitements hors métiers.
+
+
+## Les API à consommer
+
 
 
