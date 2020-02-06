@@ -3,7 +3,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/zolomazizi/Environnement-news">
-    <img src="https://github.com/zolomazizi/AngularP2/blob/master/logo.jpg" alt="Logo" width="80" height="80">
+    <img src="https://github.com/zolomazizi/AngularP2/blob/master/logo.jpg" alt="Logo" width="130" height="130">
   </a>
 
   <h3 align="center">Project P2</h3>
@@ -21,6 +21,10 @@
     <a href="https://github.com/zolomazizi/DashboardAngular/tree/master/DashboardAngular/Angular-dashboard-master">front end dashboard</a>
   </p>
 </p>
+
+
+
+
 
 
 * [PRÉSENTATION DU PROJET ](#PRÉSENTATION-DU-PROJET )
