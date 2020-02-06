@@ -50,9 +50,14 @@ Après la réunion avec M. Jaafar DAHBI (personnel de IT6 à Rabat), organisée 
 
 Si on prend par exemple le site web yahoo créé en 1999 constitué de plusieurs catégories et parmi ses catégories on trouve l'actualité informatique, la façon dont le site web est composé perturbe la bonne expérience de l’utilisateur par le nombre de rubriques et de pages proposés par le site et la façon de présentation des articles.
 
-_parmi les site web qui existe est attaque le même marcher en site ci-dessous quelque exemple:
+
+_parmi les site web qui existe est attaque le même marcher en site ci-dessous quelque exemple:_
+
 1. https://www.unenvironment.org/
+
 2.https://news.mongabay.com/
+
 3.https://www.thegef.org/
+
 4.https://www.wri.org/
 
