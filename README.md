@@ -117,7 +117,7 @@ Dans notre cas en vas réaliser un projet de la presse thématique (Environnemen
 - Conception de bases de données relationnelles avec UML. 
 
 ### Diagramme de Use Case 
-![API page](https://github.com/zolomazizi/AngularP2/blob/master/classe.PNG)
+![API page](https://github.com/zolomazizi/AngularP2/blob/master/)
 
 ### Diagramme de séquence
 ![API page](https://github.com/zolomazizi/AngularP2/blob/master/seqeunce.PNG)
@@ -166,6 +166,7 @@ Api/account/logup a Authorize Gestionner
 ainsi qu’envoyer les informations au body
 
 Nom(String), Prenom(String), Email(String),Tele(int), Statu(Bool),Role(‘journalistes’ ou ‘Gestionner’), Password(String), ConfirmPassword(String).
+![API page](https://github.com/zolomazizi/AngularP2/blob/master/register.PNG)
 
 ### Api/Token
 
