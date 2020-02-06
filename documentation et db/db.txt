@@ -1,0 +1,519 @@
+
+-- --------------------------------------------------
+-- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
+-- --------------------------------------------------
+-- Date Created: 01/31/2020 12:19:07
+-- Generated from EDMX file: C:\Users\Youcode\source\repos\EnveronementNaws\EnveronementNaws.Data\EnveronementNews.edmx
+-- --------------------------------------------------
+
+SET QUOTED_IDENTIFIER OFF;
+GO
+USE [NEWS];
+GO
+IF SCHEMA_ID(N'dbo') IS NULL EXECUTE(N'CREATE SCHEMA [dbo]');
+GO
+
+-- --------------------------------------------------
+-- Dropping existing FOREIGN KEY constraints
+-- --------------------------------------------------
+
+IF OBJECT_ID(N'[dbo].[FK_Article_ChefRedaction]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Article] DROP CONSTRAINT [FK_Article_ChefRedaction];
+GO
+IF OBJECT_ID(N'[dbo].[FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[AspNetUserClaims] DROP CONSTRAINT [FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId];
+GO
+IF OBJECT_ID(N'[dbo].[FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[AspNetUserLogins] DROP CONSTRAINT [FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId];
+GO
+IF OBJECT_ID(N'[dbo].[FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[AspNetUserRoles] DROP CONSTRAINT [FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId];
+GO
+IF OBJECT_ID(N'[dbo].[FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[AspNetUserRoles] DROP CONSTRAINT [FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId];
+GO
+IF OBJECT_ID(N'[dbo].[FK_FKArticle595439]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Article] DROP CONSTRAINT [FK_FKArticle595439];
+GO
+IF OBJECT_ID(N'[dbo].[FK_FKArticle668536]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Article] DROP CONSTRAINT [FK_FKArticle668536];
+GO
+IF OBJECT_ID(N'[dbo].[FK_FKCommentair387374]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Commentaire] DROP CONSTRAINT [FK_FKCommentair387374];
+GO
+IF OBJECT_ID(N'[dbo].[FK_FKGestionner622322]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Gestionner] DROP CONSTRAINT [FK_FKGestionner622322];
+GO
+IF OBJECT_ID(N'[dbo].[FK_FKJournaliste622032]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Journalistes] DROP CONSTRAINT [FK_FKJournaliste622032];
+GO
+IF OBJECT_ID(N'[dbo].[FK_FKRedactionChef622022]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[RedacteurEnChef] DROP CONSTRAINT [FK_FKRedactionChef622022];
+GO
+
+-- --------------------------------------------------
+-- Dropping existing tables
+-- --------------------------------------------------
+
+IF OBJECT_ID(N'[dbo].[__MigrationHistory]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[__MigrationHistory];
+GO
+IF OBJECT_ID(N'[dbo].[Api]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Api];
+GO
+IF OBJECT_ID(N'[dbo].[Article]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Article];
+GO
+IF OBJECT_ID(N'[dbo].[AspNetRoles]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[AspNetRoles];
+GO
+IF OBJECT_ID(N'[dbo].[AspNetUserClaims]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[AspNetUserClaims];
+GO
+IF OBJECT_ID(N'[dbo].[AspNetUserLogins]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[AspNetUserLogins];
+GO
+IF OBJECT_ID(N'[dbo].[AspNetUserRoles]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[AspNetUserRoles];
+GO
+IF OBJECT_ID(N'[dbo].[AspNetUsers]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[AspNetUsers];
+GO
+IF OBJECT_ID(N'[dbo].[Categorie]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Categorie];
+GO
+IF OBJECT_ID(N'[dbo].[Commentaire]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Commentaire];
+GO
+IF OBJECT_ID(N'[dbo].[Gestionner]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Gestionner];
+GO
+IF OBJECT_ID(N'[dbo].[Journalistes]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Journalistes];
+GO
+IF OBJECT_ID(N'[dbo].[Pub]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Pub];
+GO
+IF OBJECT_ID(N'[dbo].[RedacteurEnChef]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[RedacteurEnChef];
+GO
+IF OBJECT_ID(N'[dbo].[Roles]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Roles];
+GO
+
+-- --------------------------------------------------
+-- Creating all tables
+-- --------------------------------------------------
+
+-- Creating table 'C__MigrationHistory'
+CREATE TABLE [dbo].[C__MigrationHistory] (
+    [MigrationId] nvarchar(150)  NOT NULL,
+    [ContextKey] nvarchar(300)  NOT NULL,
+    [Model] varbinary(max)  NOT NULL,
+    [ProductVersion] nvarchar(32)  NOT NULL
+);
+GO
+
+-- Creating table 'Api'
+CREATE TABLE [dbo].[Api] (
+    [ID] int IDENTITY(1,1) NOT NULL,
+    [name] varchar(255)  NULL,
+    [Lien] varchar(255)  NULL
+);
+GO
+
+-- Creating table 'Article'
+CREATE TABLE [dbo].[Article] (
+    [ID] int IDENTITY(1,1) NOT NULL,
+    [CategorieID] int  NULL,
+    [JournalistesID] int  NULL,
+    [RedactionEnChefID] int  NULL,
+    [Date] datetime  NULL,
+    [Titre] varchar(255)  NULL,
+    [Status] varchar(255)  NULL,
+    [Body] varchar(255)  NULL,
+    [Img] varchar(255)  NULL,
+    [video] varchar(255)  NULL
+);
+GO
+
+-- Creating table 'AspNetRoles'
+CREATE TABLE [dbo].[AspNetRoles] (
+    [Id] nvarchar(128)  NOT NULL,
+    [Name] nvarchar(256)  NOT NULL
+);
+GO
+
+-- Creating table 'AspNetUserClaims'
+CREATE TABLE [dbo].[AspNetUserClaims] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [UserId] nvarchar(128)  NOT NULL,
+    [ClaimType] nvarchar(max)  NULL,
+    [ClaimValue] nvarchar(max)  NULL
+);
+GO
+
+-- Creating table 'AspNetUserLogins'
+CREATE TABLE [dbo].[AspNetUserLogins] (
+    [LoginProvider] nvarchar(128)  NOT NULL,
+    [ProviderKey] nvarchar(128)  NOT NULL,
+    [UserId] nvarchar(128)  NOT NULL
+);
+GO
+
+-- Creating table 'AspNetUsers'
+CREATE TABLE [dbo].[AspNetUsers] (
+    [Id] nvarchar(128)  NOT NULL,
+    [Email] nvarchar(256)  NULL,
+    [EmailConfirmed] bit  NOT NULL,
+    [PasswordHash] nvarchar(max)  NULL,
+    [SecurityStamp] nvarchar(max)  NULL,
+    [PhoneNumber] nvarchar(max)  NULL,
+    [PhoneNumberConfirmed] bit  NOT NULL,
+    [TwoFactorEnabled] bit  NOT NULL,
+    [LockoutEndDateUtc] datetime  NULL,
+    [LockoutEnabled] bit  NOT NULL,
+    [AccessFailedCount] int  NOT NULL,
+    [UserName] nvarchar(256)  NOT NULL
+);
+GO
+
+-- Creating table 'Categorie'
+CREATE TABLE [dbo].[Categorie] (
+    [ID] int IDENTITY(1,1) NOT NULL,
+    [Titre] varchar(255)  NULL
+);
+GO
+
+-- Creating table 'Commentaire'
+CREATE TABLE [dbo].[Commentaire] (
+    [ID] int IDENTITY(1,1) NOT NULL,
+    [ArticleID] int  NULL,
+    [Contenu] varchar(255)  NULL,
+    [User_mail] varchar(255)  NULL,
+    [User_name] varchar(255)  NULL,
+    [CommentaireDate] datetime  NULL
+);
+GO
+
+-- Creating table 'Gestionner'
+CREATE TABLE [dbo].[Gestionner] (
+    [ID] int IDENTITY(1,1) NOT NULL,
+    [Name] varchar(255)  NULL,
+    [Tele] varchar(255)  NULL,
+    [Email] varchar(255)  NULL,
+    [User_id] nvarchar(128)  NULL,
+    [Prenom] varchar(255)  NULL,
+    [Statu] varchar(255)  NULL
+);
+GO
+
+-- Creating table 'Journalistes'
+CREATE TABLE [dbo].[Journalistes] (
+    [ID] int IDENTITY(1,1) NOT NULL,
+    [Nom] varchar(255)  NULL,
+    [Prenom] varchar(255)  NULL,
+    [Statu] bit  NULL,
+    [Tele] varchar(255)  NULL,
+    [Image] varchar(255)  NULL,
+    [Email] varchar(255)  NULL,
+    [User_id] nvarchar(128)  NULL
+);
+GO
+
+-- Creating table 'Pub'
+CREATE TABLE [dbo].[Pub] (
+    [ID] int IDENTITY(1,1) NOT NULL,
+    [Img] varchar(255)  NULL,
+    [Titre] varchar(50)  NULL,
+    [Url] varchar(255)  NULL
+);
+GO
+
+-- Creating table 'RedacteurEnChef'
+CREATE TABLE [dbo].[RedacteurEnChef] (
+    [ID] int IDENTITY(1,1) NOT NULL,
+    [Email] varchar(255)  NULL,
+    [Nom] varchar(255)  NULL,
+    [Prenom] varchar(255)  NULL,
+    [Statu] bit  NOT NULL,
+    [Image] varchar(255)  NULL,
+    [Tele] varchar(255)  NULL,
+    [User_id] nvarchar(128)  NULL
+);
+GO
+
+-- Creating table 'Roles'
+CREATE TABLE [dbo].[Roles] (
+    [ID] int IDENTITY(1,1) NOT NULL,
+    [Role_name] varchar(255)  NULL
+);
+GO
+
+-- Creating table 'AspNetUserRoles'
+CREATE TABLE [dbo].[AspNetUserRoles] (
+    [AspNetRoles_Id] nvarchar(128)  NOT NULL,
+    [AspNetUsers_Id] nvarchar(128)  NOT NULL
+);
+GO
+
+-- --------------------------------------------------
+-- Creating all PRIMARY KEY constraints
+-- --------------------------------------------------
+
+-- Creating primary key on [MigrationId], [ContextKey] in table 'C__MigrationHistory'
+ALTER TABLE [dbo].[C__MigrationHistory]
+ADD CONSTRAINT [PK_C__MigrationHistory]
+    PRIMARY KEY CLUSTERED ([MigrationId], [ContextKey] ASC);
+GO
+
+-- Creating primary key on [ID] in table 'Api'
+ALTER TABLE [dbo].[Api]
+ADD CONSTRAINT [PK_Api]
+    PRIMARY KEY CLUSTERED ([ID] ASC);
+GO
+
+-- Creating primary key on [ID] in table 'Article'
+ALTER TABLE [dbo].[Article]
+ADD CONSTRAINT [PK_Article]
+    PRIMARY KEY CLUSTERED ([ID] ASC);
+GO
+
+-- Creating primary key on [Id] in table 'AspNetRoles'
+ALTER TABLE [dbo].[AspNetRoles]
+ADD CONSTRAINT [PK_AspNetRoles]
+    PRIMARY KEY CLUSTERED ([Id] ASC);
+GO
+
+-- Creating primary key on [Id] in table 'AspNetUserClaims'
+ALTER TABLE [dbo].[AspNetUserClaims]
+ADD CONSTRAINT [PK_AspNetUserClaims]
+    PRIMARY KEY CLUSTERED ([Id] ASC);
+GO
+
+-- Creating primary key on [LoginProvider], [ProviderKey], [UserId] in table 'AspNetUserLogins'
+ALTER TABLE [dbo].[AspNetUserLogins]
+ADD CONSTRAINT [PK_AspNetUserLogins]
+    PRIMARY KEY CLUSTERED ([LoginProvider], [ProviderKey], [UserId] ASC);
+GO
+
+-- Creating primary key on [Id] in table 'AspNetUsers'
+ALTER TABLE [dbo].[AspNetUsers]
+ADD CONSTRAINT [PK_AspNetUsers]
+    PRIMARY KEY CLUSTERED ([Id] ASC);
+GO
+
+-- Creating primary key on [ID] in table 'Categorie'
+ALTER TABLE [dbo].[Categorie]
+ADD CONSTRAINT [PK_Categorie]
+    PRIMARY KEY CLUSTERED ([ID] ASC);
+GO
+
+-- Creating primary key on [ID] in table 'Commentaire'
+ALTER TABLE [dbo].[Commentaire]
+ADD CONSTRAINT [PK_Commentaire]
+    PRIMARY KEY CLUSTERED ([ID] ASC);
+GO
+
+-- Creating primary key on [ID] in table 'Gestionner'
+ALTER TABLE [dbo].[Gestionner]
+ADD CONSTRAINT [PK_Gestionner]
+    PRIMARY KEY CLUSTERED ([ID] ASC);
+GO
+
+-- Creating primary key on [ID] in table 'Journalistes'
+ALTER TABLE [dbo].[Journalistes]
+ADD CONSTRAINT [PK_Journalistes]
+    PRIMARY KEY CLUSTERED ([ID] ASC);
+GO
+
+-- Creating primary key on [ID] in table 'Pub'
+ALTER TABLE [dbo].[Pub]
+ADD CONSTRAINT [PK_Pub]
+    PRIMARY KEY CLUSTERED ([ID] ASC);
+GO
+
+-- Creating primary key on [ID] in table 'RedacteurEnChef'
+ALTER TABLE [dbo].[RedacteurEnChef]
+ADD CONSTRAINT [PK_RedacteurEnChef]
+    PRIMARY KEY CLUSTERED ([ID] ASC);
+GO
+
+-- Creating primary key on [ID] in table 'Roles'
+ALTER TABLE [dbo].[Roles]
+ADD CONSTRAINT [PK_Roles]
+    PRIMARY KEY CLUSTERED ([ID] ASC);
+GO
+
+-- Creating primary key on [AspNetRoles_Id], [AspNetUsers_Id] in table 'AspNetUserRoles'
+ALTER TABLE [dbo].[AspNetUserRoles]
+ADD CONSTRAINT [PK_AspNetUserRoles]
+    PRIMARY KEY CLUSTERED ([AspNetRoles_Id], [AspNetUsers_Id] ASC);
+GO
+
+-- --------------------------------------------------
+-- Creating all FOREIGN KEY constraints
+-- --------------------------------------------------
+
+-- Creating foreign key on [RedactionEnChefID] in table 'Article'
+ALTER TABLE [dbo].[Article]
+ADD CONSTRAINT [FK_Article_ChefRedaction]
+    FOREIGN KEY ([RedactionEnChefID])
+    REFERENCES [dbo].[RedacteurEnChef]
+        ([ID])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_Article_ChefRedaction'
+CREATE INDEX [IX_FK_Article_ChefRedaction]
+ON [dbo].[Article]
+    ([RedactionEnChefID]);
+GO
+
+-- Creating foreign key on [JournalistesID] in table 'Article'
+ALTER TABLE [dbo].[Article]
+ADD CONSTRAINT [FK_FKArticle595439]
+    FOREIGN KEY ([JournalistesID])
+    REFERENCES [dbo].[Journalistes]
+        ([ID])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_FKArticle595439'
+CREATE INDEX [IX_FK_FKArticle595439]
+ON [dbo].[Article]
+    ([JournalistesID]);
+GO
+
+-- Creating foreign key on [CategorieID] in table 'Article'
+ALTER TABLE [dbo].[Article]
+ADD CONSTRAINT [FK_FKArticle668536]
+    FOREIGN KEY ([CategorieID])
+    REFERENCES [dbo].[Categorie]
+        ([ID])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_FKArticle668536'
+CREATE INDEX [IX_FK_FKArticle668536]
+ON [dbo].[Article]
+    ([CategorieID]);
+GO
+
+-- Creating foreign key on [ArticleID] in table 'Commentaire'
+ALTER TABLE [dbo].[Commentaire]
+ADD CONSTRAINT [FK_FKCommentair387374]
+    FOREIGN KEY ([ArticleID])
+    REFERENCES [dbo].[Article]
+        ([ID])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_FKCommentair387374'
+CREATE INDEX [IX_FK_FKCommentair387374]
+ON [dbo].[Commentaire]
+    ([ArticleID]);
+GO
+
+-- Creating foreign key on [UserId] in table 'AspNetUserClaims'
+ALTER TABLE [dbo].[AspNetUserClaims]
+ADD CONSTRAINT [FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId]
+    FOREIGN KEY ([UserId])
+    REFERENCES [dbo].[AspNetUsers]
+        ([Id])
+    ON DELETE CASCADE ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId'
+CREATE INDEX [IX_FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId]
+ON [dbo].[AspNetUserClaims]
+    ([UserId]);
+GO
+
+-- Creating foreign key on [UserId] in table 'AspNetUserLogins'
+ALTER TABLE [dbo].[AspNetUserLogins]
+ADD CONSTRAINT [FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId]
+    FOREIGN KEY ([UserId])
+    REFERENCES [dbo].[AspNetUsers]
+        ([Id])
+    ON DELETE CASCADE ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId'
+CREATE INDEX [IX_FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId]
+ON [dbo].[AspNetUserLogins]
+    ([UserId]);
+GO
+
+-- Creating foreign key on [User_id] in table 'Gestionner'
+ALTER TABLE [dbo].[Gestionner]
+ADD CONSTRAINT [FK_FKGestionner622322]
+    FOREIGN KEY ([User_id])
+    REFERENCES [dbo].[AspNetUsers]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_FKGestionner622322'
+CREATE INDEX [IX_FK_FKGestionner622322]
+ON [dbo].[Gestionner]
+    ([User_id]);
+GO
+
+-- Creating foreign key on [User_id] in table 'Journalistes'
+ALTER TABLE [dbo].[Journalistes]
+ADD CONSTRAINT [FK_FKJournaliste622032]
+    FOREIGN KEY ([User_id])
+    REFERENCES [dbo].[AspNetUsers]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_FKJournaliste622032'
+CREATE INDEX [IX_FK_FKJournaliste622032]
+ON [dbo].[Journalistes]
+    ([User_id]);
+GO
+
+-- Creating foreign key on [User_id] in table 'RedacteurEnChef'
+ALTER TABLE [dbo].[RedacteurEnChef]
+ADD CONSTRAINT [FK_FKRedactionChef622022]
+    FOREIGN KEY ([User_id])
+    REFERENCES [dbo].[AspNetUsers]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_FKRedactionChef622022'
+CREATE INDEX [IX_FK_FKRedactionChef622022]
+ON [dbo].[RedacteurEnChef]
+    ([User_id]);
+GO
+
+-- Creating foreign key on [AspNetRoles_Id] in table 'AspNetUserRoles'
+ALTER TABLE [dbo].[AspNetUserRoles]
+ADD CONSTRAINT [FK_AspNetUserRoles_AspNetRoles]
+    FOREIGN KEY ([AspNetRoles_Id])
+    REFERENCES [dbo].[AspNetRoles]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating foreign key on [AspNetUsers_Id] in table 'AspNetUserRoles'
+ALTER TABLE [dbo].[AspNetUserRoles]
+ADD CONSTRAINT [FK_AspNetUserRoles_AspNetUsers]
+    FOREIGN KEY ([AspNetUsers_Id])
+    REFERENCES [dbo].[AspNetUsers]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_AspNetUserRoles_AspNetUsers'
+CREATE INDEX [IX_FK_AspNetUserRoles_AspNetUsers]
+ON [dbo].[AspNetUserRoles]
+    ([AspNetUsers_Id]);
+GO
+
+-- --------------------------------------------------
+-- Script has ended
+-- --------------------------------------------------
