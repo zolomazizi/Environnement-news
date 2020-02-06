@@ -117,8 +117,11 @@ Dans notre cas en vas réaliser un projet de la presse thématique (Environnemen
 - Conception de bases de données relationnelles avec UML. 
 
 ### Diagramme de Use Case 
+![API page](https://github.com/zolomazizi/AngularP2/blob/master/classe.PNG)
 
 ### Diagramme de séquence
+![API page](https://github.com/zolomazizi/AngularP2/blob/master/seqeunce.PNG)
+![API page](https://github.com/zolomazizi/AngularP2/blob/master/sqounce.PNG)
 
 ### Diagramme de classe
 ![API page](https://github.com/zolomazizi/AngularP2/blob/master/classe.PNG)
