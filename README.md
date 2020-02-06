@@ -23,9 +23,9 @@
 </p>
 
 
-* [PRÉSENTATION DU PROJET ](#PRÉSENTATION_DU_PROJET )
-  * [Identification de besoin ](#Identification_de_besoin )
-* [Description de l'existant ](#Description_de_l'existant )
+* [PRÉSENTATION DU PROJET ](#PRÉSENTATION-DU-PROJET )
+  * [Identification de besoin ](#Identification-de_besoin )
+* [Description de l'existant ](#Description-de-l'existant )
   * [Definition du projet](#Definition_du_projet)
   * [OBJECTIFS](#OBJECTIFS)
   * [CARACTÉRISTIQUES](#CARACTÉRISTIQUES)
