@@ -46,3 +46,13 @@ Youcode est une école de programmation qui ouvre les chances à tout le monde. 
 
 Après la réunion avec M. Jaafar DAHBI (personnel de IT6 à Rabat), organisée dans le cadre de l'identification des problèmes confrontés par les gens intéressés par les nouveautés de la technologie et de l’informatique. À ce stade on a pu identifier les difficultés au niveau du nombre énorme des sites informatiques, et la nécessité d’une plateforme qui facilite l'accès aux nouveautés proposés par ces sites . 
 
+## Description de l'existant
+
+Si on prend par exemple le site web yahoo créé en 1999 constitué de plusieurs catégories et parmi ses catégories on trouve l'actualité informatique, la façon dont le site web est composé perturbe la bonne expérience de l’utilisateur par le nombre de rubriques et de pages proposés par le site et la façon de présentation des articles.
+
+_parmi les site web qui existe est attaque le même marcher en site ci-dessous quelque exemple:
+1. https://www.unenvironment.org/
+2.https://news.mongabay.com/
+3.https://www.thegef.org/
+4.https://www.wri.org/
+
