@@ -78,7 +78,9 @@ Dans notre cas en vas réaliser un projet de la presse thématique (Environnemen
 2.	Création d’une interface Admin (Dashboard) :
 
     a – La gestion des profils journaliste et rédacteur chef  et droit utilisateur.
+    
     b – fonctionnalité CRUD (Modification, Supression,Consultation,Ajout).
+    
     c - L’automatisation du système de notification .
     
  3. consommation des flux externe (rss , rest api ).
