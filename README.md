@@ -173,3 +173,25 @@ Nom(String), Prenom(String), Email(String),Tele(int), Statu(Bool),Role(‘journa
 
 	var reqHeader = new HttpHeaders({ 'Content-Type': 
 
+HOME:
+
+### api/ Article /Article
+•	Pour avoir liste des 10 Article dans body de  page Home  il faut utiliser le lien (get) : 
+
+```sh
+api/ Article /Article
+```
+
+Int ID , date date , string Titre ,string body , string img , string video ,string  NomJournaliste 
+
+
+### api/ Article /Articleslide
+
+Et pour avoir  3 article dans le slide odre par date il faut utiliser le lien (get) :
+
+```sh
+Api/article/Articleslide
+```
+
+Int ID , date date , string Titre ,string body , string img , string video ,string  NomJournaliste 
+
