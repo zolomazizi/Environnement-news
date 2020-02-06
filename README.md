@@ -232,6 +232,8 @@ Pour avoir detaile d’Article il faut utiliser le lien (get)  avec id:
 api/ Article /DetaileArticle/id
 ```
 
+![API page](https://github.com/zolomazizi/AngularP2/blob/master/articlee.PNG)
+
 Int ID , date date , string Titre ,string body , string img , string video ,string  NomJournaliste
 
 ### api/Article/ToutArticles/id
@@ -289,7 +291,7 @@ Pour avoir detaile de journaliste et les article ecrite il faut utiliser le lien
 ```sh
  api/ journalist /DetaileArticle/id
  ``` 
- 
+ ![API page](https://github.com/zolomazizi/AngularP2/blob/master/journalist.PNG)
 Int ID , string nom , string prenom ,string email , string tele, int nombrearticle , string img
 
 
