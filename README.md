@@ -120,10 +120,14 @@ Dans notre cas en vas réaliser un projet de la presse thématique (Environnemen
 ![API page](https://github.com/zolomazizi/AngularP2/blob/master/)
 
 ### Diagramme de séquence
+
 ![API page](https://github.com/zolomazizi/AngularP2/blob/master/seqeunce.PNG)
+
+
 ![API page](https://github.com/zolomazizi/AngularP2/blob/master/sqounce.PNG)
 
 ### Diagramme de classe
+
 ![API page](https://github.com/zolomazizi/AngularP2/blob/master/classe.PNG)
 
 
@@ -166,6 +170,8 @@ Api/account/logup a Authorize Gestionner
 ainsi qu’envoyer les informations au body
 
 Nom(String), Prenom(String), Email(String),Tele(int), Statu(Bool),Role(‘journalistes’ ou ‘Gestionner’), Password(String), ConfirmPassword(String).
+
+
 ![API page](https://github.com/zolomazizi/AngularP2/blob/master/register.PNG)
 
 ### Api/Token
@@ -177,6 +183,8 @@ Nom(String), Prenom(String), Email(String),Tele(int), Statu(Bool),Role(‘journa
 •	Et envoyer au header une autorisation (Post)
 
 	var reqHeader = new HttpHeaders({ 'Content-Type': 
+	
+![API page](https://github.com/zolomazizi/AngularP2/blob/master/login.PNG)
 
 HOME:
 
@@ -239,7 +247,9 @@ Int ID , date date , string Titre ,string body , string img , string video ,stri
 Pour poster un  Article il faut utiliser le lien (post)  : 
 ```sh
 api/ Article /ArticleEnPost
+
 ``` 
+![API page](https://github.com/zolomazizi/AngularP2/blob/master/postarticlePNG.PNG)
 
 ### api/ Article / ArticleEnPut
 
@@ -258,6 +268,7 @@ pour poster un commentair utiliser li lien (post) :
 
 api/article/commentEnPost
 ```
+![API page](https://github.com/zolomazizi/AngularP2/blob/master/comment.PNG)
 
 ### api/ Article / comment
 
