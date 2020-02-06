@@ -121,7 +121,7 @@ Dans notre cas en vas réaliser un projet de la presse thématique (Environnemen
 ### Diagramme de séquence
 
 ### Diagramme de classe
-[![classe.PNG][classe.PNG]](https://github.com/zolomazizi/AngularP2/blob/master/classe.PNG)
+[![classe.PNG][classe.PNG]]
 
 
 
