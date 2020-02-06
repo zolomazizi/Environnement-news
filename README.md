@@ -3,7 +3,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/zolomazizi/Environnement-news">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://github.com/zolomazizi/AngularP2/blob/master/logo.jpg" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Project P2</h3>
