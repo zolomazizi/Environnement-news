@@ -151,4 +151,13 @@ Pour réalise nous projet en a divise la solution a 3 partie
 ## Les API à consommer
 
 
+AUTHENTIFICATION :
+
+### Api/logup
+
+•	Pour consommer API de registrement (journaliste ,redaction en chef , gestiooner ) il faut utiliser le lien:
+
+Api/account/logup a Authorize Gestionner , ainsi qu’envoyer les informations au body
+
+Nom(String), Prenom(String), Email(String),Tele(int), Statu(Bool),Role(‘journalistes’ ou ‘Gestionner’), Password(String), ConfirmPassword(String).
 
