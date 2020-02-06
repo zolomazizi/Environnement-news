@@ -163,3 +163,13 @@ ainsi qu’envoyer les informations au body
 
 Nom(String), Prenom(String), Email(String),Tele(int), Statu(Bool),Role(‘journalistes’ ou ‘Gestionner’), Password(String), ConfirmPassword(String).
 
+### Api/Token
+
+•	Pour s’identifier il faut utiliser /token et envoyer au body :(Post)
+
+	"username=" + Le nom d’utilisateur + "& password d’utilisateur=" + password + "&grant_type=password” ;
+  
+•	Et envoyer au header une autorisation (Post)
+
+	var reqHeader = new HttpHeaders({ 'Content-Type': 
+
