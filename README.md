@@ -232,7 +232,7 @@ Pour avoir detaile d’Article il faut utiliser le lien (get)  avec id:
 api/ Article /DetaileArticle/id
 ```
 
-![API page](https://github.com/zolomazizi/AngularP2/blob/master/articlee.PNG)
+![API page](https://github.com/zolomazizi/AngularP2/blob/master/Artilcee.PNG)
 
 Int ID , date date , string Titre ,string body , string img , string video ,string  NomJournaliste
 
