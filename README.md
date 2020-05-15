@@ -159,7 +159,18 @@ Pour réalise nous projet en a divise la solution a 3 partie
 
 •	Partie LOGIQUE qui contient des traitements hors métiers.
 
+## Home Page du dashboard 
 
+![API page](https://github.com/zolomazizi/AngularP2/blob/master/front-dashboard.PNG)
+
+## Page des Article dashboard 
+
+![API page](https://github.com/zolomazizi/AngularP2/blob/master/front-list-articles.PNG)
+
+
+## weather widget
+
+![API page](https://github.com/zolomazizi/AngularP2/blob/master/front-weather.PNG)
 ## Les API à consommer
 
 
@@ -300,7 +311,7 @@ pour geter un monnemtair utiliser le lien (get) :
 ```sh
 api/article/comment/id
 ```
-![API page](https://github.com/zolomazizi/AngularP2/blob/master/get-les-commentair-du article.PNG)
+![API page](https://github.com/zolomazizi/AngularP2/blob/master/get-les-commentair-du-article.PNG)
 ### api/ journalist / journalistSelect/id 
 
 Pour avoir detaile de journaliste et les article ecrite il faut utiliser le lien (get)  avec id:
@@ -311,7 +322,7 @@ Pour avoir detaile de journaliste et les article ecrite il faut utiliser le lien
  ![API page](https://github.com/zolomazizi/AngularP2/blob/master/front-carte-journalist.PNG)
 Int ID , string nom , string prenom ,string email , string tele, int nombrearticle , string img
 
-![API page](https://github.com/zolomazizi/AngularP2/blob/master/detaile-d'un journalist-et-son-article.PNG)
+![API page](https://github.com/zolomazizi/AngularP2/blob/master/detaile-d'un-journalist-et-son-article.PNG)
 
 
 ### api/ journalist / listJournalist
@@ -354,6 +365,8 @@ pour editer le statu de journaliste ou redaction en chef utiliser le lien(put) :
 ```sh
 api/journalist/ journalisteEdite
 ```
+![API page](https://github.com/zolomazizi/AngularP2/blob/master/modifier-un-journalist.PNG)
+
 
 
 
