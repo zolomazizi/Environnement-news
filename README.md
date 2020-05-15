@@ -201,7 +201,7 @@ api/ Article /Article
 
 Int ID , date date , string Titre ,string body , string img , string video ,string  NomJournaliste 
 
-![API page](https://github.com/zolomazizi/AngularP2/blob/master/list des journalist.PNG)
+![API page](https://github.com/zolomazizi/AngularP2/blob/master/front-list-article-home)
 
 
 ### api/ Article /Articleslide
