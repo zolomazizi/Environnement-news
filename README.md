@@ -42,6 +42,11 @@
 * [Les API à consommer ](#Les-API-à-consommer )
 * [Contact](#contact)
 
+## Introduction 
+Après deux années de formation à Youcode, on est appelé à réaliser un projet pour consolider nos acquis théoriques et avoir une idée sur le monde professionnel.  
+Dans ce cadre, on a réalisé un projet de la presse thématique (Environnement news).
+
+
 ## PRÉSENTATION DU PROJET
 
 Youcode est une école de programmation qui ouvre les chances à tout le monde. C'est le rêve de tout débutant en codage et développement web, nouvellement créée à Youssoufia avec la collaboration du Groupe OCP et du leader français de l'éducation numérique (Simplon).
@@ -121,7 +126,7 @@ Dans notre cas en vas réaliser un projet de la presse thématique (Environnemen
 - Conception de bases de données relationnelles avec UML. 
 
 ### Diagramme de Use Case 
-![API page](https://github.com/zolomazizi/AngularP2/blob/master/)
+![API page](https://github.com/zolomazizi/AngularP2/blob/master/usecase.bmp)
 
 ### Diagramme de séquence
 
@@ -145,6 +150,19 @@ Dans notre cas en vas réaliser un projet de la presse thématique (Environnemen
 •	EntityFramework
 
 •	Miscrosoft.Owin.Cors
+## Les technologies 
+Dans le programme de la formation Youcode on a étudié plusieurs langages de programmation donc pour mettre en pratique ce que nous avons appris, on a travaillé avec ces techniques dans notre projet 
+•	IHM et Design graphique:
+-	Programmation HTML 5 et utilisation CSS3.
+-	Framework et Bibliothèque JAVACRIPT / JQUERY / Bootstrap / Bibliothèque Graphique.
+-	Framework: Angular.
+•	Services et Applications:
+-	Injection des Dépendances et mise en œuvre de MVC.
+-	Configuration et Utilisation des Framework.
+-	Utilisation des Contrôleurs REST API et mécanismes des Interfaces techniques.
+•	Base de données:
+-	SQL.
+-	Utilisation du Framework entité Framework (ORM) pour la gestion des Entités.
 
 
 ## Conception de Code
