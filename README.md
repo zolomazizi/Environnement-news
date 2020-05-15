@@ -258,7 +258,7 @@ api/ Article /ArticleEnPost
 
 ``` 
 
-![API page](https://github.com/zolomazizi/AngularP2/blob/master/front-article-detail.PNG)
+![API page](https://github.com/zolomazizi/AngularP2/blob/master/front-post-article.PNG)
 
 ### api/ Article / ArticleEnPut
 
