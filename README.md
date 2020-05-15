@@ -300,7 +300,7 @@ pour geter un monnemtair utiliser le lien (get) :
 ```sh
 api/article/comment/id
 ```
-![API page](https://github.com/zolomazizi/AngularP2/blob/master/get-les commentair-du article.PNG)
+![API page](https://github.com/zolomazizi/AngularP2/blob/master/get-les-commentair-du article.PNG)
 ### api/ journalist / journalistSelect/id 
 
 Pour avoir detaile de journaliste et les article ecrite il faut utiliser le lien (get)  avec id:
