@@ -178,6 +178,9 @@ Nom(String), Prenom(String), Email(String),Tele(int), Statu(Bool),Role(‘journa
 
 ![API page](https://github.com/zolomazizi/AngularP2/blob/master/front-register.PNG)
 
+![API page](https://github.com/zolomazizi/AngularP2/blob/master/register.PNG)
+
+
 ### Api/Token
 
 •	Pour s’identifier il faut utiliser /token et envoyer au body :(Post)
@@ -189,6 +192,7 @@ Nom(String), Prenom(String), Email(String),Tele(int), Statu(Bool),Role(‘journa
 	var reqHeader = new HttpHeaders({ 'Content-Type': 
 	
 ![API page](https://github.com/zolomazizi/AngularP2/blob/master/front-login.PNG)
+![API page](https://github.com/zolomazizi/AngularP2/blob/master/login-token.PNG)
 
 HOME:
 
@@ -201,7 +205,9 @@ api/ Article /Article
 
 Int ID , date date , string Titre ,string body , string img , string video ,string  NomJournaliste 
 
-![API page](https://github.com/zolomazizi/AngularP2/blob/master/front-list-article-home)
+![API page](https://github.com/zolomazizi/AngularP2/blob/master/front-list-article-home.PNG)
+
+![API page](https://github.com/zolomazizi/AngularP2/blob/master/toute-les-Article.PNG)
 
 
 ### api/ Article /Articleslide
@@ -213,6 +219,8 @@ Api/article/Articleslide
 ```
 
 Int ID , date date , string Titre ,string body , string img , string video ,string  NomJournaliste 
+
+![API page](https://github.com/zolomazizi/AngularP2/blob/master/les-article-du-slide.PNG)
 
 
 ### api/Article/DaysArticle
@@ -226,6 +234,8 @@ api/Article/DaysArticle
 
 Int ID , date date , string Titre ,string body , string img , string video ,string  NomJournaliste
 
+![API page](https://github.com/zolomazizi/AngularP2/blob/master/les-articles-par-day.PNG)
+
 ### api/ Article /DetaileArticle/id
 
 Pour avoir detaile d’Article il faut utiliser le lien (get)  avec id: 
@@ -235,6 +245,8 @@ api/ Article /DetaileArticle/id
 ```
 
 ![API page](https://github.com/zolomazizi/AngularP2/blob/master/front-article-detail.PNG)
+
+![API page](https://github.com/zolomazizi/AngularP2/blob/master/detail-article.PNG)
 
 Int ID , date date , string Titre ,string body , string img , string video ,string  NomJournaliste
 
@@ -260,6 +272,8 @@ api/ Article /ArticleEnPost
 
 ![API page](https://github.com/zolomazizi/AngularP2/blob/master/front-post-article.PNG)
 
+![API page](https://github.com/zolomazizi/AngularP2/blob/master/post-article.PNG)
+
 ### api/ Article / ArticleEnPut
 
 pour editer article utiliser le lien (put) :
@@ -268,7 +282,7 @@ pour editer article utiliser le lien (put) :
 
 api/article/articleEnPut
 ```
-
+![API page](https://github.com/zolomazizi/AngularP2/blob/master/modifier-un-Article.PNG)
 ### api/ Article / commentEnPost
 
 pour poster un commentair utiliser li lien (post) :
@@ -277,7 +291,7 @@ pour poster un commentair utiliser li lien (post) :
 
 api/article/commentEnPost
 ```
-![API page](https://github.com/zolomazizi/AngularP2/blob/master/comment.PNG)
+![API page](https://github.com/zolomazizi/AngularP2/blob/master/poster-un-commentaire.PNG)
 
 ### api/ Article / comment
 
@@ -286,7 +300,7 @@ pour geter un monnemtair utiliser le lien (get) :
 ```sh
 api/article/comment/id
 ```
-
+![API page](https://github.com/zolomazizi/AngularP2/blob/master/get-les commentair-du article.PNG)
 ### api/ journalist / journalistSelect/id 
 
 Pour avoir detaile de journaliste et les article ecrite il faut utiliser le lien (get)  avec id:
@@ -296,6 +310,8 @@ Pour avoir detaile de journaliste et les article ecrite il faut utiliser le lien
  ``` 
  ![API page](https://github.com/zolomazizi/AngularP2/blob/master/front-carte-journalist.PNG)
 Int ID , string nom , string prenom ,string email , string tele, int nombrearticle , string img
+
+![API page](https://github.com/zolomazizi/AngularP2/blob/master/detaile-d'un journalist-et-son-article.PNG)
 
 
 ### api/ journalist / listJournalist
