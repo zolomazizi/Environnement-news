@@ -176,7 +176,7 @@ ainsi qu’envoyer les informations au body
 Nom(String), Prenom(String), Email(String),Tele(int), Statu(Bool),Role(‘journalistes’ ou ‘Gestionner’), Password(String), ConfirmPassword(String).
 
 
-![API page](https://github.com/zolomazizi/AngularP2/blob/master/register.PNG)
+![API page](https://github.com/zolomazizi/AngularP2/blob/master/front-register.PNG)
 
 ### Api/Token
 
@@ -188,7 +188,7 @@ Nom(String), Prenom(String), Email(String),Tele(int), Statu(Bool),Role(‘journa
 
 	var reqHeader = new HttpHeaders({ 'Content-Type': 
 	
-![API page](https://github.com/zolomazizi/AngularP2/blob/master/login.PNG)
+![API page](https://github.com/zolomazizi/AngularP2/blob/master/front-login.PNG)
 
 HOME:
 
@@ -200,6 +200,8 @@ api/ Article /Article
 ```
 
 Int ID , date date , string Titre ,string body , string img , string video ,string  NomJournaliste 
+
+![API page](https://github.com/zolomazizi/AngularP2/blob/master/front-list-articles.PNG)
 
 
 ### api/ Article /Articleslide
@@ -232,7 +234,7 @@ Pour avoir detaile d’Article il faut utiliser le lien (get)  avec id:
 api/ Article /DetaileArticle/id
 ```
 
-![API page](https://github.com/zolomazizi/AngularP2/blob/master/Artilcee.PNG)
+![API page](https://github.com/zolomazizi/AngularP2/blob/master/front-article-detail.PNG)
 
 Int ID , date date , string Titre ,string body , string img , string video ,string  NomJournaliste
 
@@ -255,7 +257,8 @@ Pour poster un  Article il faut utiliser le lien (post)  :
 api/ Article /ArticleEnPost
 
 ``` 
-![API page](https://github.com/zolomazizi/AngularP2/blob/master/postarticlePNG.PNG)
+
+![API page](https://github.com/zolomazizi/AngularP2/blob/master/front-article-detail.PNG)
 
 ### api/ Article / ArticleEnPut
 
@@ -291,7 +294,7 @@ Pour avoir detaile de journaliste et les article ecrite il faut utiliser le lien
 ```sh
  api/ journalist /DetaileArticle/id
  ``` 
- ![API page](https://github.com/zolomazizi/AngularP2/blob/master/journalist.PNG)
+ ![API page](https://github.com/zolomazizi/AngularP2/blob/master/front-carte-journalist.PNG)
 Int ID , string nom , string prenom ,string email , string tele, int nombrearticle , string img
 
 
