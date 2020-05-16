@@ -6,7 +6,7 @@
     <img src="https://github.com/zolomazizi/AngularP2/blob/master/logo.jpg" alt="Logo" width="130" height="130">
   </a>
 
-  <h3 align="center">Project P2</h3>
+  <h3 align="center">Project P4</h3>
 
   <p align="center">
    Environnement news site web
