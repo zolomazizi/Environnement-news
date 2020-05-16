@@ -52,6 +52,15 @@ namespace EnveronementNews.Models
         
         [Display(Name = "Choisissez un role")]
         public string Role { get; set; }
+
+        [Display(Name = "Tele")]
+        public string Tele { get; set; }
+
+        [Display(Name = "Nom")]
+        public string Nom { get; set; }
+
+        [Display(Name = "Prenom")]
+        public string Prenom { get; set; }
     }
 
     public class RegisterExternalBindingModel

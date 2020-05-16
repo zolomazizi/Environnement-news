@@ -1,0 +1,8 @@
+.journaliste a{
+    color:black;
+    text-transform: uppercase;
+}
+.journaliste a:hover{
+    color:rgb(94, 184, 46);
+    text-transform: uppercase;
+}

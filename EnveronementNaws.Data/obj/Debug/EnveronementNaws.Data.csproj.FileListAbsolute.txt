@@ -12,3 +12,17 @@ C:\Users\Youcode\source\repos\EnveronementNaws\EnveronementNaws.Data\obj\Debug\E
 C:\Users\Youcode\source\repos\EnveronementNaws\EnveronementNaws.Data\obj\Debug\EnveronementNaws.Data.csproj.CopyComplete
 C:\Users\Youcode\source\repos\EnveronementNaws\EnveronementNaws.Data\obj\Debug\EnveronementNaws.Data.dll
 C:\Users\Youcode\source\repos\EnveronementNaws\EnveronementNaws.Data\obj\Debug\EnveronementNaws.Data.pdb
+C:\Users\Youcode\Desktop\News\Environnement-news\EnveronementNaws.Data\bin\Debug\EnveronementNaws.Data.dll.config
+C:\Users\Youcode\Desktop\News\Environnement-news\EnveronementNaws.Data\bin\Debug\EnveronementNaws.Data.dll
+C:\Users\Youcode\Desktop\News\Environnement-news\EnveronementNaws.Data\bin\Debug\EnveronementNaws.Data.pdb
+C:\Users\Youcode\Desktop\News\Environnement-news\EnveronementNaws.Data\bin\Debug\EntityFramework.dll
+C:\Users\Youcode\Desktop\News\Environnement-news\EnveronementNaws.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Youcode\Desktop\News\Environnement-news\EnveronementNaws.Data\bin\Debug\EntityFramework.xml
+C:\Users\Youcode\Desktop\News\Environnement-news\EnveronementNaws.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Youcode\Desktop\News\Environnement-news\EnveronementNaws.Data\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\Youcode\Desktop\News\Environnement-news\EnveronementNaws.Data\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\Youcode\Desktop\News\Environnement-news\EnveronementNaws.Data\obj\Debug\EnveronementNaws.Data.csprojAssemblyReference.cache
+C:\Users\Youcode\Desktop\News\Environnement-news\EnveronementNaws.Data\obj\Debug\EnveronementNaws.Data.csproj.CoreCompileInputs.cache
+C:\Users\Youcode\Desktop\News\Environnement-news\EnveronementNaws.Data\obj\Debug\EnveronementNaws.Data.csproj.CopyComplete
+C:\Users\Youcode\Desktop\News\Environnement-news\EnveronementNaws.Data\obj\Debug\EnveronementNaws.Data.dll
+C:\Users\Youcode\Desktop\News\Environnement-news\EnveronementNaws.Data\obj\Debug\EnveronementNaws.Data.pdb

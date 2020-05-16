@@ -23,6 +23,7 @@
     <EntitySetMapping Name="Article">
       <EntityTypeMapping TypeName="NEWSModel.Article">
         <MappingFragment StoreEntitySet="Article">
+          <ScalarProperty Name="Description" ColumnName="Description" />
           <ScalarProperty Name="video" ColumnName="video" />
           <ScalarProperty Name="Img" ColumnName="Img" />
           <ScalarProperty Name="Body" ColumnName="Body" />
@@ -124,6 +125,15 @@
           <ScalarProperty Name="Statu" ColumnName="Statu" />
           <ScalarProperty Name="Prenom" ColumnName="Prenom" />
           <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="local">
+      <EntityTypeMapping TypeName="NEWSModel.local">
+        <MappingFragment StoreEntitySet="local">
+          <ScalarProperty Name="long" ColumnName="long" />
+          <ScalarProperty Name="alt" ColumnName="alt" />
           <ScalarProperty Name="ID" ColumnName="ID" />
         </MappingFragment>
       </EntityTypeMapping>

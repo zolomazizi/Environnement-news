@@ -1,0 +1,19 @@
+<div *ngFor="let article of articles" class="row mt-3 ml-3">
+    <div class="col">
+        <div class="card" style="width: 50rem; margin-left: 17%; ">
+            <img src= "http://localhost:49367/{{article.Img}}" class="card-img-top " alt="benjamin"  >
+            <div class="card-body">
+                <h2 style="margin-top: 5%; text-align: center;" class="card-title">{{article.Titre}}</h2>
+                <p style="margin-top: 5%;" class="card-text"> {{article.Description}}
+                    <a routerLink="/details/{{article.ID}}"  ><small>reed more..</small></a><br>
+                    <small class="journaliste text-muted"><a routerLink="/detailj/{{article.JournalistesID}}" >{{article.Journaliste}}</a></small><br>
+                    <small class="text-muted">{{article.Date }}</small>
+                </p>   
+            </div>
+        </div>
+    </div> 
+</div>
+
+
+
+   

@@ -12,6 +12,7 @@
     <EntitySet Name="Commentaire" EntityType="NEWSModel.Commentaire" />
     <EntitySet Name="Gestionner" EntityType="NEWSModel.Gestionner" />
     <EntitySet Name="Journalistes" EntityType="NEWSModel.Journalistes" />
+    <EntitySet Name="local" EntityType="NEWSModel.local" />
     <EntitySet Name="Pub" EntityType="NEWSModel.Pub" />
     <EntitySet Name="RedacteurEnChef" EntityType="NEWSModel.RedacteurEnChef" />
     <EntitySet Name="Roles" EntityType="NEWSModel.Roles" />
@@ -85,13 +86,14 @@
     <Property Name="Date" Type="DateTime" Precision="3" />
     <Property Name="Titre" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
     <Property Name="Status" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-    <Property Name="Body" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Body" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
     <Property Name="Img" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
     <Property Name="video" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="RedacteurEnChef" Relationship="NEWSModel.FK_Article_ChefRedaction" FromRole="Article" ToRole="RedacteurEnChef" />
     <NavigationProperty Name="Journalistes" Relationship="NEWSModel.FKArticle595439" FromRole="Article" ToRole="Journalistes" />
     <NavigationProperty Name="Categorie" Relationship="NEWSModel.FKArticle668536" FromRole="Article" ToRole="Categorie" />
     <NavigationProperty Name="Commentaire" Relationship="NEWSModel.FKCommentair387374" FromRole="Article" ToRole="Commentaire" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="AspNetRoles">
     <Key>
@@ -162,8 +164,8 @@
     <Property Name="Contenu" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
     <Property Name="User_mail" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
     <Property Name="User_name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="Article" Relationship="NEWSModel.FKCommentair387374" FromRole="Commentaire" ToRole="Article" />
     <Property Name="CommentaireDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Article" Relationship="NEWSModel.FKCommentair387374" FromRole="Commentaire" ToRole="Article" />
   </EntityType>
   <EntityType Name="Gestionner">
     <Key>
@@ -192,6 +194,14 @@
     <Property Name="User_id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="Article" Relationship="NEWSModel.FKArticle595439" FromRole="Journalistes" ToRole="Article" />
     <NavigationProperty Name="AspNetUsers" Relationship="NEWSModel.FKJournaliste622032" FromRole="Journalistes" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="local">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="alt" Type="Double" />
+    <Property Name="long" Type="Double" />
   </EntityType>
   <EntityType Name="Pub">
     <Key>

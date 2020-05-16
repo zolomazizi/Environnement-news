@@ -71,7 +71,7 @@ namespace EnveronementNews.Controllers
         //    }
         //    return Ok(journaliste);
         //}
-        [Route("journalistSelect")]
+        [Route("journalistSelect/{id}")]
         public IHttpActionResult GetJournalist(int id = 0)
         {
 
@@ -91,8 +91,11 @@ namespace EnveronementNews.Controllers
                 vm.Statu = j.Statu;
                 vm.NombrArticle = j.Article.Count();
                 vm.Email = j.Email;
+                //vm.articles = j.Article.ToList();
+                
 
                 var al = new List<Article>();
+                //var jn = context.Article.Where(jl => jl.ID == j.).ToList();
                 foreach (var a in j.Article)
                 {
                     Article am = new Article();

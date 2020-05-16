@@ -29,9 +29,10 @@
     <Property Name="Date" Type="datetime" />
     <Property Name="Titre" Type="varchar" MaxLength="255" />
     <Property Name="Status" Type="varchar" MaxLength="255" />
-    <Property Name="Body" Type="varchar" MaxLength="255" />
+    <Property Name="Body" Type="text" />
     <Property Name="Img" Type="varchar" MaxLength="255" />
     <Property Name="video" Type="varchar" MaxLength="255" />
+    <Property Name="Description" Type="text" />
   </EntityType>
   <EntityType Name="AspNetRoles">
     <Key>
@@ -126,6 +127,14 @@
     <Property Name="Image" Type="varchar" MaxLength="255" />
     <Property Name="Email" Type="varchar" MaxLength="255" />
     <Property Name="User_id" Type="nvarchar" MaxLength="128" />
+  </EntityType>
+  <EntityType Name="local">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="alt" Type="float" />
+    <Property Name="long" Type="float" />
   </EntityType>
   <EntityType Name="Pub">
     <Key>
@@ -309,6 +318,7 @@
     <EntitySet Name="Commentaire" EntityType="Self.Commentaire" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Gestionner" EntityType="Self.Gestionner" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Journalistes" EntityType="Self.Journalistes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="local" EntityType="Self.local" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Pub" EntityType="Self.Pub" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="RedacteurEnChef" EntityType="Self.RedacteurEnChef" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />

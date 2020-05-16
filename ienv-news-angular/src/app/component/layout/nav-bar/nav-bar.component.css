@@ -1,0 +1,44 @@
+.logo-height img{
+    height: 2.4em;
+}
+.custom-font {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.nav-link{
+    color: black !important;
+}
+/* font icon colors */
+.fa-facebook-official{
+    color: #3b5998;
+}
+
+.fa-youtube-play {
+    color: #c4302b;
+}
+/* search input */
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+/* active */
+.c-active {
+    border-bottom: 1px solid#008000  ;
+    /* color: #F22929; */
+}
+.nav-link:hover {
+    background-color:  rgba(37, 167, 80, 0.719);
+    color: #FFF !important;
+    border-radius: 3px;
+}

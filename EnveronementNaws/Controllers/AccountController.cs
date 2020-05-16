@@ -324,8 +324,8 @@ namespace EnveronementNews.Controllers
         [AllowAnonymous]
 
 
-        [Authorize(Roles = "Gestionner")]
-        [Route("logup")]
+        //[Authorize(Roles = "Gestionner")]
+        [Route("Register")]
         public async Task<IHttpActionResult> Register(RegisterBindingModel model)
         {
             HttpRequest httpRequest = HttpContext.Current.Request;
@@ -359,11 +359,11 @@ namespace EnveronementNews.Controllers
             {
                var j = new Journalistes();
                 var currentUser = UserManager.FindByName(user.UserName);
-                j.Nom = httpRequest["Nom"];
-                j.Prenom = httpRequest["Prenom"];
-                j.Email = httpRequest["Email"];
+                j.Nom = model.Nom;
+                j.Prenom = model.Prenom;
+                j.Email = model.Email;
                
-                j.Tele = httpRequest["Tele"];
+                j.Tele = model.Tele;
                 var statu = httpRequest["Statu"];
                 if (statu == httpRequest["true"])
                 {
@@ -380,11 +380,11 @@ namespace EnveronementNews.Controllers
             {
                var r = new RedacteurEnChef();
                 var currentUser = UserManager.FindByName(user.UserName);
-                r.Nom = httpRequest["Nom"];
-                r.Prenom = httpRequest["Prenom"];
-                r.Email = httpRequest["Email"];
+                r.Nom = model.Nom;
+                r.Prenom = model.Prenom;
+                r.Email = model.Email;
                 
-                r.Tele = httpRequest["Tele"];
+                r.Tele = model.Tele;
                 var statu = httpRequest["Statu"];
                 if (statu == "true")
                 {

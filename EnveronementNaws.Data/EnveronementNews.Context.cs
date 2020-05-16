@@ -36,6 +36,7 @@ namespace EnveronementNaws.Data
         public virtual DbSet<Commentaire> Commentaire { get; set; }
         public virtual DbSet<Gestionner> Gestionner { get; set; }
         public virtual DbSet<Journalistes> Journalistes { get; set; }
+        public virtual DbSet<local> local { get; set; }
         public virtual DbSet<Pub> Pub { get; set; }
         public virtual DbSet<RedacteurEnChef> RedacteurEnChef { get; set; }
         public virtual DbSet<Roles> Roles { get; set; }

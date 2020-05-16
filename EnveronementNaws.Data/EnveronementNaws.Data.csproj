@@ -99,6 +99,9 @@
     <Compile Include="Journalistes.cs">
       <DependentUpon>EnveronementNews.tt</DependentUpon>
     </Compile>
+    <Compile Include="local.cs">
+      <DependentUpon>EnveronementNews.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Pub.cs">
       <DependentUpon>EnveronementNews.tt</DependentUpon>

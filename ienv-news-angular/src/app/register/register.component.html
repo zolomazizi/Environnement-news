@@ -1,0 +1,93 @@
+
+
+
+
+<app-nav-bar></app-nav-bar>
+<div class="container">
+  <div class="row">
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md- mt-5  mx-auto">
+            <span class="badge  ">
+              <h1><i class="fa fa-lock"></i>Register</h1>
+            </span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 mt-3 mx-auto">
+            <form [formGroup]="register" (ngSubmit)="SignUp()">
+        
+              <div class="form-group col-md-12 "><label for="Email">email</label><input formControlName="Email" id="Email" type="email"
+                  class="form-control"></div>
+        
+              <div class="form-group col-md-12"><label for="password">password</label><input formControlName="password" id="password"
+                  type="password" class="form-control"></div>
+        
+              <div class="form-group col-md-12"><label for="ConfirmPassword">Confirm Password</label><input
+                  formControlName="ConfirmPassword" id="ConfirmPassword" type="password" class="form-control"></div>
+        
+              <div class="form-group col-md-12"><label for="Nom">Nom</label><input formControlName="Nom" id="Nom" type="text"
+                  class="form-control"></div>
+        
+              <div class="form-group col-md-12"><label for="Prenom">Prenom</label><input formControlName="Prenom" id="Prenom"
+                  type="text" class="form-control"></div>
+        
+                  <div class="form-group col-md-12"><label for="Tele">tele</label><input formControlName="Tele" id="Tele"
+                    type="text" class="form-control"></div>
+        
+                    <!-- <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown button
+                      </button>
+                      <select class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <option value="1" class="dropdown-item" >1</a>
+                        <option value="2" class="dropdown-item" href="#">2</a>
+                        <option value="3" class="dropdown-item" href="#"> 3</a>
+                      </div>
+                    </div> -->
+                    <div class="form-group col-md-6">
+                    <label class="form-group" for="cars">Statu</label>
+                    </div>
+                    <div class="form-group col-md-6">
+                    <select class="browser-default custom-select" formControlName="Role" id="Role" id="cars" name="cars">
+                      <option value="ChefRedaction">Chef Redaction</option>
+                      <option value="journalistes">journaliste</option>
+                      
+                    </select>
+                  </div>
+        
+                  
+        
+              <button style="margin-top: 8%;" class="btn btn-success col-md-2 "><i class="fa fa-lock"></i>Login</button>
+            </form>
+          </div>
+        </div>
+        <!-- <div class="container">
+          <div class="row">
+            <div class="col s8 offset-2">
+              <div class="card-panel teal lighten-2">
+                <h4 class="center white-text">Image Library</h4>
+              </div>
+              <form #imageForm=ngForm>
+        
+                <img [src]="imageUrl" style="width:250px;height:200px">
+                <input type="file" #Image accept="image/*" (change)="handleFileInput($event.target.files)">
+        
+              </form>
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <div class="col-md-4">
+        <app-weather></app-weather>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col">
+        <!-- footer Articles -->
+        <!-- <app-footer-articles></app-footer-articles> -->
+    </div>
+</div>
+</div>
+ <!-- <app-publicite></app-publicite>  -->
+<app-footer></app-footer>

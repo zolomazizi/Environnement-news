@@ -30,6 +30,7 @@ namespace EnveronementNaws.Data
         public string Body { get; set; }
         public string Img { get; set; }
         public string video { get; set; }
+        public string Description { get; set; }
     
         public virtual RedacteurEnChef RedacteurEnChef { get; set; }
         public virtual Journalistes Journalistes { get; set; }

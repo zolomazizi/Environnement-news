@@ -1,0 +1,49 @@
+
+
+<app-nav-bar></app-nav-bar>
+<div class="container">
+  <div class="row">
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-6 mt-5  mx-auto">
+            <span class="badge  ">
+              <h1><i class="fa fa-lock"></i>Login</h1>
+            </span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 mt-3 mx-auto">
+            <form [formGroup]="userData" (ngSubmit)="loged()">
+              <div class="form-group col-md-12"><label for="email">email</label><input formControlName="email" id="email" type="text"
+                  class="form-control"></div>
+              <div class="form-group col-md-12"><label for="password">password</label><input formControlName="password" id="password"
+                  type="text" class="form-control"></div>
+        
+              <button  class="btn btn-success col-md-2  text-center"><i class="fa fa-lock"></i>Login</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <app-weather></app-weather>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col">
+        <!-- footer Articles -->
+        <!-- <app-footer-articles></app-footer-articles> -->
+    </div>
+</div>
+</div>
+ <!-- <app-publicite></app-publicite>  -->
+<app-footer></app-footer>
+<!-- <section>
+    <app-slider></app-slider>
+    <app-body-articles class="mt-2"></app-body-articles>
+</section>
+
+<section>
+    <div class="container">
+       
+    </div>
+</section> -->

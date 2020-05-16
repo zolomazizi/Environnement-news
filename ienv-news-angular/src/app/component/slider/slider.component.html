@@ -1,0 +1,25 @@
+<div id="slider">
+    <div   class="slides">
+        <!-- First slide -->
+        <div *ngFor="let article of articles" class="slider">
+            <div class="legend"></div>
+            <div class="content">
+                <div class="content-txt">
+                    <h3 class="font-weight-bold"> {{article.Titre}} </h3>
+                    
+                    <h2 class="w-50"> {{article.Description}}
+                        <a  routerLink="/details/{{article.ID}}"  ><small>reed more..</small></a><br></h2>                       
+                        <small class="text-muted ml-5">{{article.Date }}</small>
+                </div>
+            </div>
+            <div class="images">
+                <img class="img-fluid" src= "http://localhost:49367/{{article.Img}}" >
+            </div>
+        </div>        
+    </div>
+        <!-- Second slide -->
+    
+        <!-- Third slide -->
+       
+   
+</div>

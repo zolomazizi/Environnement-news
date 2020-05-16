@@ -1,0 +1,42 @@
+
+
+ <app-nav-bar></app-nav-bar>
+<div class="container">
+  <div class="row">
+      <div class="col-md-8">
+        <div class="col mt-4">
+            <h2>{{detail.Titre}}</h2>
+            <hr>
+            <!-- <video controls width="250"> -->
+             <!-- <source src="https://www.youtube.com/embed/3FrW8vMl9Fg" type="video/embed"></video> -->
+            <iframe width="700" height="315" src="https://www.youtube.com/embed/3FrW8vMl9Fg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
+            <p>{{detail.Description}}</p>
+               <img src= "http://localhost:49367/{{detail.Img}}" class="card-img-top" alt="benjamin" height="300px" >
+            <p>{{detail.Body}}</p>
+            <div class="card-body">
+               <h5 class="card-title">{{detail.Titre}}</h5>
+               <p class="card-text"> {{detail.Description}}
+                   <!-- <a routerLink="/details/{{detail.ID}}"  ><small>reed more..</small></a><br> -->
+                   <small class="journaliste text-muted"><a routerLink="/detailj/{{detail.JournalistesID}}" >{{detail.Journaliste}}</a></small><br>
+                   <small class="text-muted">{{detail.Date }}</small>
+               </p>   
+           </div>
+       
+            
+            
+        </div>
+      </div>
+      <div class="col-md-4">
+        <app-weather></app-weather>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col">
+        <!-- footer Articles -->
+        <!-- <app-footer-articles></app-footer-articles> -->
+    </div>
+</div>
+</div>
+ <app-publicite></app-publicite> 
+<app-footer></app-footer>
+  

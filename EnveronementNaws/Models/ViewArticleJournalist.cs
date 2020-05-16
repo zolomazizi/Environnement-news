@@ -14,6 +14,9 @@ namespace EnveronementNews.Models
         public string Img { get; set; }
         public string Video { get; set; }
         public string Journaliste { get; set; }
+        public string Description { get; set; }
+        public int JournalistesID { get; set; }
+        public string JournalisteImg { get; set; }
         public int Categorie { get; set; }
     }
 }

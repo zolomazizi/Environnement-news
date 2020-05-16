@@ -38,11 +38,16 @@ namespace EnveronementNews.Controllers
                 foreach (var n in article)
                 {
                     ViewArticleJournalist vm = new ViewArticleJournalist();
+                    vm.ID = n.ID;
+                    
                     vm.Img = n.Img;
                     vm.Titre = n.Titre;
                     vm.Body = n.Body;
                     vm.Date = n.Date;
                     vm.Journaliste = n.Journalistes.Nom;
+                    vm.JournalisteImg = n.Journalistes.Image;
+                    vm.JournalistesID = n.Journalistes.ID;
+                    vm.Description = n.Description;
                     articles.Add(vm);
                 }
 
@@ -71,11 +76,13 @@ namespace EnveronementNews.Controllers
                 foreach (var n in article)
                 {
                     ViewArticleJournalist vm = new ViewArticleJournalist();
+                    vm.ID = n.ID; 
                     vm.Img = n.Img;
                     vm.Titre = n.Titre;
                     vm.Body = n.Body;
                     vm.Date = n.Date;
                     vm.Journaliste = n.Journalistes.Nom;
+                    vm.JournalistesID = n.Journalistes.ID;
                     articles.Add(vm);
                 }
             }
@@ -102,18 +109,20 @@ namespace EnveronementNews.Controllers
                 foreach (var n in article)
                 {
                     ViewArticleJournalist vm = new ViewArticleJournalist();
+                    vm.ID = n.ID;
                     vm.Img = n.Img;
                     vm.Titre = n.Titre;
                     vm.Body = n.Body;
                     vm.Date = n.Date;
-                    vm.Journaliste = n.Journalistes.Nom;
+                    //vm.Journaliste = n.Journalistes.Nom;
+                    //vm.JournalistesID = n.Journalistes.ID;
                     articles.Add(vm);
                 }
 
             }
             return Ok(articles);
         }
-        [Route("DetaileArticle")]
+        [Route("DetaileArticle/{id}")]
         public IHttpActionResult GetArticle(int id)
         {
             ViewArticleJournalist article;
@@ -132,6 +141,9 @@ namespace EnveronementNews.Controllers
                 article.Video = A.video;
                 article.Date = A.Date;
                 article.Journaliste = A.Journalistes.Nom;
+                article.JournalistesID = A.Journalistes.ID;
+                article.Categorie = A.Categorie.ID;
+                
             }
             return Ok(article);
         }
@@ -151,12 +163,12 @@ namespace EnveronementNews.Controllers
             }
 
 
-
-            return CreatedAtRoute("DefaultApi", new { id = commentaire.ID }, commentaire);
+            return Ok();
+            //return CreatedAtRoute("DefaultApi", new { id = commentaire.ID }, commentaire);
         }
 
 
-        [Route("comment")]
+        [Route("comment/{id}")]
         public IHttpActionResult GetCommentaire(int id)
         {
             CommentaireModel commentair;
@@ -257,8 +269,11 @@ namespace EnveronementNews.Controllers
 
             return Ok(Footer);
         }
+       
         [Route("ArticleEnPost")]
+        [HttpPost]
         [ResponseType(typeof(Article))]
+
         public IHttpActionResult PostArticle(Article article)
         {
             if (!ModelState.IsValid)
@@ -273,11 +288,11 @@ namespace EnveronementNews.Controllers
             }
 
 
-
-            return CreatedAtRoute("DefaultApi", new { id = article.ID }, article);
+            return Ok();
+            //return CreatedAtRoute("DefaultApi", new { id = article.ID }, article);
         }
         private NEWSEntities db = new NEWSEntities();
-        [Route("ArticleEnPut")]
+        [Route("ArticleEnPut/{id}")]
         [ResponseType(typeof(void))]
         public IHttpActionResult PutArticle(int id, Article article)
 
@@ -297,7 +312,8 @@ namespace EnveronementNews.Controllers
             db.SaveChanges();
 
 
-            return StatusCode(HttpStatusCode.NoContent);
+            //return StatusCode(HttpStatusCode.NoContent);
+            return Ok();
         }
 
 

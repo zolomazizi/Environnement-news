@@ -34,9 +34,10 @@
           <Property Name="Date" Type="datetime" />
           <Property Name="Titre" Type="varchar" MaxLength="255" />
           <Property Name="Status" Type="varchar" MaxLength="255" />
-          <Property Name="Body" Type="varchar" MaxLength="255" />
+          <Property Name="Body" Type="text" />
           <Property Name="Img" Type="varchar" MaxLength="255" />
           <Property Name="video" Type="varchar" MaxLength="255" />
+          <Property Name="Description" Type="text" />
         </EntityType>
         <EntityType Name="AspNetRoles">
           <Key>
@@ -131,6 +132,14 @@
           <Property Name="Image" Type="varchar" MaxLength="255" />
           <Property Name="Email" Type="varchar" MaxLength="255" />
           <Property Name="User_id" Type="nvarchar" MaxLength="128" />
+        </EntityType>
+        <EntityType Name="local">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="alt" Type="float" />
+          <Property Name="long" Type="float" />
         </EntityType>
         <EntityType Name="Pub">
           <Key>
@@ -314,6 +323,7 @@
           <EntitySet Name="Commentaire" EntityType="Self.Commentaire" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Gestionner" EntityType="Self.Gestionner" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Journalistes" EntityType="Self.Journalistes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="local" EntityType="Self.local" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Pub" EntityType="Self.Pub" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="RedacteurEnChef" EntityType="Self.RedacteurEnChef" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
@@ -378,6 +388,7 @@
           <EntitySet Name="Commentaire" EntityType="NEWSModel.Commentaire" />
           <EntitySet Name="Gestionner" EntityType="NEWSModel.Gestionner" />
           <EntitySet Name="Journalistes" EntityType="NEWSModel.Journalistes" />
+          <EntitySet Name="local" EntityType="NEWSModel.local" />
           <EntitySet Name="Pub" EntityType="NEWSModel.Pub" />
           <EntitySet Name="RedacteurEnChef" EntityType="NEWSModel.RedacteurEnChef" />
           <EntitySet Name="Roles" EntityType="NEWSModel.Roles" />
@@ -451,13 +462,14 @@
           <Property Name="Date" Type="DateTime" Precision="3" />
           <Property Name="Titre" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="Status" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <Property Name="Body" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Body" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="Img" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="video" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="RedacteurEnChef" Relationship="NEWSModel.FK_Article_ChefRedaction" FromRole="Article" ToRole="RedacteurEnChef" />
           <NavigationProperty Name="Journalistes" Relationship="NEWSModel.FKArticle595439" FromRole="Article" ToRole="Journalistes" />
           <NavigationProperty Name="Categorie" Relationship="NEWSModel.FKArticle668536" FromRole="Article" ToRole="Categorie" />
           <NavigationProperty Name="Commentaire" Relationship="NEWSModel.FKCommentair387374" FromRole="Article" ToRole="Commentaire" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="AspNetRoles">
           <Key>
@@ -528,8 +540,8 @@
           <Property Name="Contenu" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="User_mail" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="User_name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="Article" Relationship="NEWSModel.FKCommentair387374" FromRole="Commentaire" ToRole="Article" />
           <Property Name="CommentaireDate" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Article" Relationship="NEWSModel.FKCommentair387374" FromRole="Commentaire" ToRole="Article" />
         </EntityType>
         <EntityType Name="Gestionner">
           <Key>
@@ -558,6 +570,14 @@
           <Property Name="User_id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Article" Relationship="NEWSModel.FKArticle595439" FromRole="Journalistes" ToRole="Article" />
           <NavigationProperty Name="AspNetUsers" Relationship="NEWSModel.FKJournaliste622032" FromRole="Journalistes" ToRole="AspNetUsers" />
+        </EntityType>
+        <EntityType Name="local">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="alt" Type="Double" />
+          <Property Name="long" Type="Double" />
         </EntityType>
         <EntityType Name="Pub">
           <Key>
@@ -734,6 +754,7 @@
           <EntitySetMapping Name="Article">
             <EntityTypeMapping TypeName="NEWSModel.Article">
               <MappingFragment StoreEntitySet="Article">
+                <ScalarProperty Name="Description" ColumnName="Description" />
                 <ScalarProperty Name="video" ColumnName="video" />
                 <ScalarProperty Name="Img" ColumnName="Img" />
                 <ScalarProperty Name="Body" ColumnName="Body" />
@@ -835,6 +856,15 @@
                 <ScalarProperty Name="Statu" ColumnName="Statu" />
                 <ScalarProperty Name="Prenom" ColumnName="Prenom" />
                 <ScalarProperty Name="Nom" ColumnName="Nom" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="local">
+            <EntityTypeMapping TypeName="NEWSModel.local">
+              <MappingFragment StoreEntitySet="local">
+                <ScalarProperty Name="long" ColumnName="long" />
+                <ScalarProperty Name="alt" ColumnName="alt" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>
